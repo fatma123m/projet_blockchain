@@ -1,16 +1,37 @@
-# hello_world
+# TP 8 : Blockchain & Application Décentralisée (DApp) avec Flutter
 
-A new Flutter project.
+Ce projet est une Application Décentralisée (DApp) "Hello World" réalisée dans le cadre du TP 8. Elle permet de lire et d'écrire des données (un nom) sur une blockchain Ethereum locale (Ganache) via une interface utilisateur Flutter.
 
-## Getting Started
+## 🚀 Fonctionnalités
 
-This project is a starting point for a Flutter application.
+* **Connexion Blockchain :** Communication en temps réel avec Ganache via WebSockets (`ws://`) et HTTP (`http://`).
+* **Smart Contract :** Contrat Solidity `HelloWorld.sol` pour stocker l'état.
+* **Lecture :** Récupération du nom stocké sur la blockchain.
+* **Écriture :** Modification du nom via une transaction signée (nécessite du Gas).
+* **Compatibilité :** Détection automatique de l'ID du réseau (Chain ID) pour fonctionner aussi bien sur `1337` que `5777`.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Technologies utilisées
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* **Frontend :** Flutter (Dart)
+* **Blockchain :** Ganache (Réseau Ethereum local)
+* **Smart Contract :** Solidity (v0.5.9)
+* **Framework Blockchain :** Truffle
+* **Librairies Dart :** `web3dart`, `provider`, `web_socket_channel`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📋 Prérequis pour tester
+
+Pour lancer ce projet, vous devez avoir installé :
+1.  **Flutter SDK** (Version 3.x recommandée)
+2.  **Ganache** (Interface graphique)
+3.  **Truffle** (`npm install -g truffle`)
+
+---
+
+## ⚙️ Installation et Configuration (Important)
+
+### 1. Cloner le projet
+```bash
+git clone [https://github.com/fatma123m/projet_blockchain.git](https://github.com/fatma123m/projet_blockchain.git)
+cd projet_blockchain
